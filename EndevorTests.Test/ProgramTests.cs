@@ -16,7 +16,8 @@ namespace EndevorTests.Tests
         [DataRow(3)]
         public void Add_Contains(int x)
         {
-            SimpleLinkedList<int> llist = new EndevorTests.SimpleLinkedList<int>();
+            
+            UniLinkedList<int> llist = new EndevorTests.UniLinkedList<int>();
 
             llist.Add(x);
             bool result = llist.Contains(x);
@@ -29,7 +30,7 @@ namespace EndevorTests.Tests
         public void Remove()
         {
             // arrange
-            SimpleLinkedList<int> llist = new SimpleLinkedList<int>();
+            UniLinkedList<int> llist = new UniLinkedList<int>();
             llist.Add(1);
             llist.Add(2);
             llist.Add(3);
@@ -47,7 +48,7 @@ namespace EndevorTests.Tests
         public void AppendFirst()
         {
             // arrange 
-            SimpleLinkedList<int> llist = new SimpleLinkedList<int>();
+            UniLinkedList<int> llist = new UniLinkedList<int>();
             llist.Add(1);
             llist.Add(2);
             llist.Add(3);
@@ -72,7 +73,7 @@ namespace EndevorTests.Tests
         public void AppendAfter()
         {
             // arrange 
-            SimpleLinkedList<int> llist = new SimpleLinkedList<int>();
+            UniLinkedList<int> llist = new UniLinkedList<int>();
             llist.Add(1);
             llist.Add(2);
             llist.Add(3);
@@ -93,7 +94,7 @@ namespace EndevorTests.Tests
         public void GetAllDataTest()
         {
             // arrange
-            SimpleLinkedList<int> llist = new SimpleLinkedList<int>();
+            UniLinkedList<int> llist = new UniLinkedList<int>();
             llist.Add(1);
             llist.Add(2);
             llist.Add(3);
