@@ -1,5 +1,9 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 
+using BiLinkedList;
 
 namespace EndevorTests
 {
@@ -9,18 +13,9 @@ namespace EndevorTests
         static void Main(string[] args)
         {
             Write("Beginning...");
-            UniLinkedList<int> list = new UniLinkedList<int>();
-            list.Add(1);
-            list.Add(2);
-            list.Add(3);
-            list.Add(4);
+            BiLinkedList<int> list = new BiLinkedList<int>();
 
-            var t = list.GetAllData();
-
-            foreach (int item in t)
-            {
-                Write(item);
-            }
+            list.ToList();
 
             Console.ReadLine();
         }

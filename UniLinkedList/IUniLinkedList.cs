@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace EndevorTests
+namespace UniLinkedList
 {
     public interface IUniLinkedList<T>
     {
@@ -17,5 +19,6 @@ namespace EndevorTests
         List<T> GetAllData();
         IEnumerator<T> GetEnumerator();
         bool Remove(T data);
+        Node<T> Get(T data);
     }
 }

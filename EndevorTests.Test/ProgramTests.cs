@@ -1,5 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using EndevorTests;
+using UniLinkedList;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,7 +7,7 @@ using System.Reflection.Metadata.Ecma335;
 
 namespace EndevorTests.Tests
 {
-    [TestClass()]
+    [TestClass]
     public class ProgramTests
     {
         [TestMethod]
@@ -16,8 +16,7 @@ namespace EndevorTests.Tests
         [DataRow(3)]
         public void Add_Contains(int x)
         {
-            
-            UniLinkedList<int> llist = new EndevorTests.UniLinkedList<int>();
+            UniLinkedList<int> llist = new UniLinkedList<int>();
 
             llist.Add(x);
             bool result = llist.Contains(x);

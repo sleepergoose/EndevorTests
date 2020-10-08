@@ -1,8 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace EndevorTests
+namespace BiLinkedList
 {
-    public interface IUniLinkedList<T>
+    interface IBiLinkedList<T> 
     {
         int Count { get; }
         Node<T> First { get; }
@@ -15,7 +17,7 @@ namespace EndevorTests
         bool Contains(T data);
         void Dispose();
         List<T> GetAllData();
-        IEnumerator<T> GetEnumerator();
         bool Remove(T data);
+        Node<T> Get(T data);
     }
 }
